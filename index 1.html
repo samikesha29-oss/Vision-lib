@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vision Library</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:#f1f5f9;
+    color:#1f2937;
+}
+
+/* HEADER */
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:#0f172a;
+    color:white;
+    padding:15px 30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav a{
+    color:white;
+    margin-left:20px;
+    text-decoration:none;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+/* HERO */
+.hero{
+    background:
+      linear-gradient(rgba(15,23,42,0.7), rgba(15,23,42,0.7)),
+      url("https://images.unsplash.com/photo-1524995997946-a1c2e315a42f");
+    background-size:cover;
+    background-position:center;
+    color:white;
+    padding:120px 20px;
+    text-align:center;
+    transition:0.4s ease;
+}
+
+.hero:hover{
+    transform:translateY(-8px);
+}
+
+.hero h2{
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:18px;
+    margin-bottom:25px;
+}
+
+/* JOIN BUTTON */
+.hero button{
+    padding:14px 35px;
+    border:none;
+    background:#38bdf8;
+    color:#000;
+    font-size:16px;
+    border-radius:30px;
+    cursor:pointer;
+    transition:0.3s ease;
+}
+
+.hero button:hover{
+    transform:translateY(-6px);
+    background:#0ea5e9;
+    color:white;
+}
+
+/* SECTION */
+section{
+    max-width:1100px;
+    margin:auto;
+    padding:70px 20px;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:35px;
+}
+
+/* COMMON CARD */
+.card{
+    padding:30px;
+    border-radius:14px;
+    text-align:center;
+    transition:0.4s ease;
+    box-shadow:0 6px 15px rgba(0,0,0,0.12);
+}
+
+.card:hover{
+    transform:translateY(-12px);
+    box-shadow:0 18px 35px rgba(0,0,0,0.25);
+}
+
+/* GRID */
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:25px;
+}
+
+/* ABOUT */
+.about-box{
+    background:#ffffff;
+    max-width:850px;
+    margin:auto;
+    line-height:1.7;
+}
+
+/* SERVICES */
+.services .card{
+    background:#e0f2fe;
+}
+
+/* RULES */
+.rules .card{
+    background:#dcfce7;
+}
+
+/* GALLERY */
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    border-radius:12px;
+    transition:0.3s ease;
+}
+
+.gallery img:hover{
+    transform:scale(1.07);
+}
+
+/* CONTACT */
+.contact-box{
+    background:#e0f2fe;
+    max-width:500px;
+    margin:auto;
+}
+
+/* FORM */
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border-radius:8px;
+    border:1px solid #ccc;
+}
+
+.contact-form button{
+    padding:12px 30px;
+    border:none;
+    background:#0ea5e9;
+    color:white;
+    border-radius:25px;
+    cursor:pointer;
+    transition:0.3s ease;
+}
+
+.contact-form button:hover{
+    transform:translateY(-6px);
+    background:#0284c7;
+}
+
+/* FOOTER */
+footer{
+    background:#020617;
+    color:white;
+    text-align:center;
+    padding:18px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Vision Library</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#rules">Rules</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HOME -->
+<div class="hero" id="home">
+    <h2>Distraction-Free Study Environment</h2>
+    <p>Serious students ke liye fully silent & disciplined library</p>
+    <button>Join Library</button>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>About Us</h2>
+    <div class="card about-box">
+        Vision Library students ko ek disciplined aur peaceful environment provide karti hai
+        jahan wo distraction-free padhai kar sakte hain.
+        <br><br>
+        Competitive exams, college studies aur self-study ke liye best place.
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="cards">
+        <div class="card">📚 Competitive Exam Books</div>
+        <div class="card">🪑 Comfortable Reading Space</div>
+        <div class="card">📰 Newspapers & Magazines</div>
+        <div class="card">🔒 Safe & Secure Environment</div>
+        <div class="card">🧼 Clean & Hygienic Library</div>
+        <div class="card">🔐 Secure Premises</div>
+    </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da">
+        <img src="https://images.unsplash.com/photo-1519682337058-a94d519337bc">
+        <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66">
+        <img src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d">
+    </div>
+</section>
+
+<!-- RULES -->
+<section id="rules" class="rules">
+    <h2>Rules & Guidelines</h2>
+    <div class="cards">
+        <div class="card">🔇 Silence compulsory</div>
+        <div class="card">📵 Mobile silent mode</div>
+        <div class="card">📚 Books damage na karein</div>
+        <div class="card">⏰ Late fine applicable</div>
+        <div class="card">🪪 Library ID mandatory</div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact Us</h2>
+    <div class="card contact-box">
+        <p>📍 Your Area, City</p>
+        <p>📞 9350303859</p>
+        <p>🕒 6:00 AM – 10:00 PM</p>
+
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name">
+            <input type="text" placeholder="Phone Number">
+            <textarea rows="4" placeholder="Message"></textarea>
+            <button type="button" onclick="sendMessage()">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    © 2025 Vision Library | All Rights Reserved
+</footer>
+
+<script>
+function sendMessage(){
+    let name = document.querySelector('.contact-form input[placeholder="Your Name"]').value;
+    let phone = document.querySelector('.contact-form input[placeholder="Phone Number"]').value;
+    let message = document.querySelector('.contact-form textarea').value;
+
+    if(name === "" || phone === "" || message === ""){
+        alert("Please fill all fields before sending message.");
+        return;
+    }
+
+    alert("Thank you " + name + "! Your message has been sent successfully.");
+    document.querySelector('.contact-form').reset();
+}
+</script>
+
+</body>
+</html>
